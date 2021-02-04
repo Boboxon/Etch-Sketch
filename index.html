@@ -11,11 +11,28 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
    <link rel="stylesheet" href="style.css">
-   <title>Hello, world!</title>
+   <title>Etch-a-Sketch</title>
 </head>
 
 <body>
-   <h1>Hello, world!</h1>
+   <h4 class="header">Etch-a-Sketch</h4>
+
+   <div class="buttons">
+      <button id="color" class="btn">Color</button>
+      <button id="erase" class="btn">Erase</button>
+      <button id="clear" class="btn">Clear</button>
+   </div>
+
+   <div class="container">
+      <div id="sketch"></div>
+   </div>
+
+   <div class="slider">
+      <p id="size"> Size </p>
+      <input type="range" min="1" max="100" value="16" id="sliderSize">
+   </div>
+
+
 
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

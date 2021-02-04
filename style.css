@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  background-color: beige;
+}
+
+.container {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  border: solid red 5px;
+}
+#sketch {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+}
+
+.buttons {
+  margin: 20px;
+  display: block;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.btn {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#size {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sliderSize {
+  margin-left: 5px;
+}
