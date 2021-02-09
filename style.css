@@ -1,3 +1,9 @@
+:root {
+  --grid-rows: 1;
+  --grid-colms: 1;
+  --square-side: 16;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,13 +17,14 @@ body {
   width: 500px;
   background-color: white;
   border: solid red 5px;
+  border-radius: 10px;
 }
 #sketch {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(var(--grid-colms), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
 }
 
 .buttons {
@@ -35,17 +42,23 @@ body {
   font-size: 20px;
 }
 
-#size {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.slider {
+.pickColor {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
 }
 
-#sliderSize {
+#color {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
   margin-left: 5px;
+  color: black;
+}
+
+label {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
 }

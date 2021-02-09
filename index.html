@@ -17,19 +17,21 @@
 <body>
    <h4 class="header">Etch-a-Sketch</h4>
 
+
+
    <div class="buttons">
-      <button id="color" class="btn">Color</button>
-      <button id="erase" class="btn">Erase</button>
       <button id="clear" class="btn">Clear</button>
+      <button id="size" class="btn">Size</button>
    </div>
 
    <div class="container">
       <div id="sketch"></div>
    </div>
 
-   <div class="slider">
-      <p id="size"> Size </p>
-      <input type="range" min="1" max="100" value="16" id="sliderSize">
+   <div class="pickColor">
+      <label class="labeltext"> Choose Color:
+         <input type="color" id="color" value="#000000">
+      </label>
    </div>
 
 
