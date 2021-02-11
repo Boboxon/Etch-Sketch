@@ -14,7 +14,7 @@ const sketch = document.getElementById("sketch");
 function sizeChange() {
   let sizeSellection = prompt(
     "How many squares do you want in the next game?",
-    "64"
+    "20"
   );
   createRows(sizeSellection);
 }

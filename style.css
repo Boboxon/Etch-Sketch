@@ -13,12 +13,15 @@ body {
 }
 
 .container {
-  height: 500px;
-  width: 500px;
+  position: relative;
+  text-align: center;
+  width: 50vw;
+  height: 50vw;
   background-color: white;
   border: solid red 5px;
   border-radius: 10px;
 }
+
 #sketch {
   height: 100%;
   width: 100%;
