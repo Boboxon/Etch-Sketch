@@ -14,11 +14,12 @@ const sketch = document.getElementById("sketch");
 function sizeChange() {
   let sizeSellection = prompt(
     "How many squares do you want in the next game?",
-    "32"
+    "64"
   );
   createRows(sizeSellection);
 }
 
+//main function
 function createRows(number = 16) {
   sketch.innerHTML = "";
   sketch.style.cssText = `grid-template-columns: repeat(${number}, 1fr);
@@ -28,11 +29,12 @@ function createRows(number = 16) {
     const box = document.createElement("div");
     box.classList.add("grid-item");
     sketch.appendChild(box);
+    //adding event listener to the box
     box.addEventListener("mouseenter", selectColor);
     box.setAttribute("style", "border: 1px solid black");
   }
 }
-//rainbow
+//selecting color
 function selectColor(e) {
   let chooseColor = color.value;
   e.target.style.backgroundColor = chooseColor;
